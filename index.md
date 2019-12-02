@@ -68,6 +68,10 @@ Each user trace is a sequence of GUI events. We use JSON Array to store user tra
   }
 ]
 ```
+
+### Notes
+- If the user trace requires the account to sign in <mark> how do we handle this? </mark>
+
 <!---
 ```markdown
 Syntax highlighted code block
