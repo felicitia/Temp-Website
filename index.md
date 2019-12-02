@@ -21,8 +21,8 @@ The key concepts in Temp and our sample data are introduced below.
 }
 ```
 #### Keys:
-1. `action:` the action performed on the triggered GUI widget. 
-For example, `click` or `sendKeys` will be converted to [`click()`](http://appium.io/docs/en/commands/element/actions/click/) and [`sendKeys()`](http://appium.io/docs/en/commands/element/actions/send-keys/) Appium methods.
+1. `action:` the action performed on the triggered GUI element. 
+For example, `click` or `sendKeys` will be converted to [click()](http://appium.io/docs/en/commands/element/actions/click/) and [sendKeys()](http://appium.io/docs/en/commands/element/actions/send-keys/) Appium methods.
 
 <mark> We should define a list of actions </mark>
 
@@ -30,17 +30,17 @@ For example, `click` or `sendKeys` will be converted to [`click()`](http://appiu
 
 3. `input:` the input value associated with the GUI event (if any). For example, if the `action` is `sendKeys` and `input` is `dummy_username`, the GUI event will be converted to `sendKeys(dummy_username)` Appium method.
 
-4. `resource-id:` the [resource ID](https://stuff.mit.edu/afs/sipb/project/android/docs/guide/topics/resources/accessing-resources.html) of the GUI widget triggered by the GUI event (if specified).
+4. `resource-id:` the [resource ID](https://stuff.mit.edu/afs/sipb/project/android/docs/guide/topics/resources/accessing-resources.html) of the GUI element triggered by the GUI event (if specified).
 
 5. `timestamp:` the timestamp of the GUI event when triggered.
 
 <mark> We should define the format of timestamp </mark>
 
-6. `view-id:` the ID of the triggered GUI widget that is used to locate such GUI widget in the current UI Hierarchy. 
+6. `view-id:` the ID of the triggered GUI element that is used to locate such GUI element in the current UI Hierarchy. 
 
-<mark>I saw this UI ID from [Rico's website](http://interactionmining.org/rico) and it would be very useful for me as well. Just to confirm, this ID can help us to locate GUI widget from the UI Hierarchy of the current Activity, right?</mark>
+<mark>I saw this UI ID from [Rico's website](http://interactionmining.org/rico) and it would be very useful for me as well. Just to confirm, this ID can help us to locate GUI element from the UI Hierarchy of the current Activity, right?</mark>
 
-7. `xpath:` the XPath of the triggered GUI widget (if specified). The XPath can be used for Appium to locate the GUI widget (see [Find Elements](http://appium.io/docs/en/commands/element/find-elements/) in Appium's documentation).
+7. `xpath:` the XPath of the triggered GUI element (if specified). The XPath can be used for Appium to locate the GUI element (see [Find Elements](http://appium.io/docs/en/commands/element/find-elements/) in Appium's documentation).
 
 ### User Trace
 Each user trace is a sequence of GUI events. We use JSON Array to store user traces.
