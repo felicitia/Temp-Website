@@ -72,6 +72,14 @@ Each user trace is a sequence of GUI events. We use JSON Array to store user tra
 ### Notes
 - If the user trace requires the account to sign in <mark> how do we handle this? </mark>
 
+# REST API Documentation
+
+## ATMGUIMapper (Spring Boot)
+
+- `/compareTextWithLemmatization?text1=aaa&text2=bbb`
+
+return `{"text1":"aaa","text2":"bbb","score":0.0}`
+
 <!---
 ```markdown
 Syntax highlighted code block
